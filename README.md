@@ -13,3 +13,9 @@ Verilerin güvenle ve bütünlük içerisinde depolanmasını ve aynı anda bird
 * Verilerin sorgulanmasını ve aramasını yapmak
 * Silinen verilerin kayıtlarının yeniden oluşturulmasını sağlamak
 * Yeni tablolar oluşturmak
+
+# SQL KULLANICI TANIMLI FONKSİYONl
+Fonksiyonlar tamamen işimizi kolaylaştırmak adına sürekli olarak tekrarladığımız sql sorgularına tek bir noktadan erişmemizi sağlar. Buda bize hızlı bir erişim
+imkanı,hızlı bir hata kontrol mekanizması, çabuk müdahale, sorgu tekrarlamama gibi imkanları verir.
+
+
