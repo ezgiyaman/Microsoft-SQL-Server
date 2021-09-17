@@ -1,23 +1,23 @@
 
-use kutuphaneyeni -- Bu sql databese kullanıldı.
+use kutuphaneyeni -- Bu sql databese kullanÄ±ldÄ±.
 
---select * from : Veritabanından veri çekmek istediğimizde kullanırız.
+--select * from : VeritabanÄ±ndan veri Ã§ekmek istediÄŸimizde kullanÄ±rÄ±z.
 
-select * from kitap -- Kitap Tablosundaki tüm değerleri bulur.
+select * from kitap -- Kitap Tablosundaki tÃ¼m deÄŸerleri bulur.
 
 select kitapno,
        ad,
 	   sayfasayisi,
 	   puan 
-from kitap -- İstenilen sütunları bize verir.
+from kitap -- Ä°stenilen sÃ¼tunlarÄ± bize verir.
 
 select ad,
        yazarno,
 	   sayi
 from kitap2
-where yazarno = 9 --> 'WHERE' kayıtları filtrelemek için kullanılır.
+where yazarno = 9 --> 'WHERE' kayÄ±tlarÄ± filtrelemek iÃ§in kullanÄ±lÄ±r.
 
---WHERE deyiminin kullanımının birden fazla koşulla da sağlanabilir.Bunun için AND ve OR deyimlerini kullanılır. 
+--WHERE deyiminin kullanÄ±mÄ±nÄ±n birden fazla koÅŸulla da saÄŸlanabilir.Bunun iÃ§in AND ve OR deyimlerini kullanÄ±lÄ±r. 
 
 select  ad,
         kitapno,
@@ -40,7 +40,7 @@ select ad,
 from ogrenci
 where (sinif='9A' and cinsiyet='E') or (sinif='9B' and cinsiyet='K')
 
--- AS KULLANIMI : SELECT <sütun adı> AS <yeni ad> FROM <tablo adı> AS <yeni tablo adı>
+-- AS KULLANIMI : SELECT <sÃ¼tun adÄ±> AS <yeni ad> FROM <tablo adÄ±> AS <yeni tablo adÄ±>
 
 select ad+' '+soyad as [adsoyad] from yazar
 
@@ -50,9 +50,9 @@ select YEAR(dtarih) as [Birth Day] from ogrenci
 
 select YEAR( GETDATE())- YEAR(dtarih) as age from ogrenci where DATEDIFF( YEAR, dtarih, GETDATE())>70
 
---ORDER BY komutu sıralı tablolar elde etmek için kullanılan komuttur. 
+--ORDER BY komutu sÄ±ralÄ± tablolar elde etmek iÃ§in kullanÄ±lan komuttur. 
 
---(ASC)Ascending(Azdan Çoka - Artan) / (DESC)Descending (Çoktan Aza- Azalan  )
+--(ASC)Ascending(Azdan Ã‡oka - Artan) / (DESC)Descending (Ã‡oktan Aza- Azalan  )
 
   select * from islem where islemno <100 order by kitapno ASC
 
@@ -69,73 +69,73 @@ select ad,id,yazarno from kitap2 where yazarno between '10' and '40' Order by 3
 
 select * from ogrenci where ogrno between 30 and 70 and cinsiyet = 'K'
 
---- TOP : Sınırlı sayıda veri çekmek için kullanılır.
+--- TOP : SÄ±nÄ±rlÄ± sayÄ±da veri Ã§ekmek iÃ§in kullanÄ±lÄ±r.
 
 select top 1 ad,soyad,dtarih from ogrenci order by dtarih desc
 
---IN KULLANIMI : Birden fazla or yazmamız gereken durumlarda kullanabileceğimiz bir yapıdır.
+--IN KULLANIMI : Birden fazla or yazmamÄ±z gereken durumlarda kullanabileceÄŸimiz bir yapÄ±dÄ±r.
 
 select * from ogrenci where ogrno IN (5,8,12)
 
---LİKE----
+--LÄ°KE----
 
 select ad,
       soyad,
       sinif 
 from ogrenci 
-where ad like 'H%' --> Adı H İle başlayan öğrenciler
+where ad like 'H%' --> AdÄ± H Ä°le baÅŸlayan Ã¶ÄŸrenciler
 
 select ad,
       soyad,
       sinif
 from ogrenci
-where soyad like '%A' --> Soyadı A ile biten öğrenciler
+where soyad like '%A' --> SoyadÄ± A ile biten Ã¶ÄŸrenciler
 
 select ad,
        soyad,
        sinif 
 from ogrenci 
-where ad like '%L%'  --> Adının içinde L harfi geçenler
+where ad like '%L%'  --> AdÄ±nÄ±n iÃ§inde L harfi geÃ§enler
 
 select ad,
       soyad,
       sinif 
 from ogrenci
-where soyad like '[RE]%' --> Adının ilk harfi  R veya E olanlar
+where soyad like '[RE]%' --> AdÄ±nÄ±n ilk harfi  R veya E olanlar
 
 select ad,
       soyad,
       sinif 
 from ogrenci
-where soyad like '%[SE]%' --> Adının içerisinde S veya E olanlar
+where soyad like '%[SE]%' --> AdÄ±nÄ±n iÃ§erisinde S veya E olanlar
 
 select ad,
       soyad,
       sinif 
 from ogrenci
-where soyad  not like '%A' --> Adı A ile bitmeyenler 
+where soyad  not like '%A' --> AdÄ± A ile bitmeyenler 
 
----STRİNG FONKSİYONLARI 
+---STRÄ°NG FONKSÄ°YONLARI 
 
-select ASCII('A') as [ASCII Kodu ] --> Sayı değer bulunur. 
+select ASCII('A') as [ASCII Kodu ] --> SayÄ± deÄŸer bulunur. 
 
-select CHAR(25) as Karakter   -- harf değerini buluyor 
+select CHAR(25) as Karakter   -- harf deÄŸerini buluyor 
 
 select CHARINDEX('z', 'ezgiyaman@gmail.com') as Konum  
  
-select LEFT('ezgi yaman ', 4) as [Soldan Karakter Sayısı]
+select LEFT('ezgi yaman ', 4) as [Soldan Karakter SayÄ±sÄ±]
 
-select Right('ezgi yaman', 4) as [Sağdan  Karakter Sayısı]
+select Right('ezgi yaman', 4) as [SaÄŸdan  Karakter SayÄ±sÄ±]
 
-select Len('ezgi yaman ') as [Karakter sayısı]
+select Len('ezgi yaman ') as [Karakter sayÄ±sÄ±]
  
-select lower('EzGi YaMAN') as [Hepsi Küçük ]
+select lower('EzGi YaMAN') as [Hepsi KÃ¼Ã§Ã¼k ]
 
-select upper('ezgi Yaman') as [Hepsi Büyük ]
+select upper('ezgi Yaman') as [Hepsi BÃ¼yÃ¼k ]
 
-select LTRIM('              Ezgi YAMAN') as [Soldaki boşlukları siler ]
+select LTRIM('              Ezgi YAMAN') as [Soldaki boÅŸluklarÄ± siler ]
 
-select RTRIM('Ezgi YAMAN            ') as [Sağdaki boşlukları siler ]
+select RTRIM('Ezgi YAMAN            ') as [SaÄŸdaki boÅŸluklarÄ± siler ]
 
 select LTRIM( RTRIM('     Ezgi YAMAN '    )) as [Her iki taraftan da siler ]
 
@@ -143,56 +143,56 @@ select REPLACE('birbirlerine','bir','iki') as [Metinlerin yerine yenilerini yaza
 
 select SUBSTRING('Ezgi Yaman',1,4) as [Alt Metin ] 
 
-select REPLICATE('Ezgi',7) --> Belirtilen değeri 7 kere tekrar eder. 
+select REPLICATE('Ezgi',7) --> Belirtilen deÄŸeri 7 kere tekrar eder. 
 
 
---AGGRATE FUNCTİON
+--AGGRATE FUNCTÄ°ON
 
---COUNT fonksiyonu, belirtilen ölçütlerle eşleşen satır sayısını döndürür.
+--COUNT fonksiyonu, belirtilen Ã¶lÃ§Ã¼tlerle eÅŸleÅŸen satÄ±r sayÄ±sÄ±nÄ± dÃ¶ndÃ¼rÃ¼r.
 
 select count (islemno) from islem
 
---SUM  fonksiyonu belirtilen sütundaki sayısal değerlerin bir toplamını geri döndürür
+--SUM  fonksiyonu belirtilen sÃ¼tundaki sayÄ±sal deÄŸerlerin bir toplamÄ±nÄ± geri dÃ¶ndÃ¼rÃ¼r
 
 select SUM(puan) as [Toplam Puan] from ogrenci
 
---AVG : Ortalama değer
+--AVG : Ortalama deÄŸer
 
 select AVG(puan) from ogrenci
 
---MİN= MİNİMUM DEĞERİ TEMSİL EDER / MAX= MAKSİMUM DEĞERİ TEMSİL EDER.
+--MÄ°N= MÄ°NÄ°MUM DEÄERÄ° TEMSÄ°L EDER / MAX= MAKSÄ°MUM DEÄERÄ° TEMSÄ°L EDER.
 
-select  MIN(puan) as [ en düşük puan] from ogrenci
+select  MIN(puan) as [ en dÃ¼ÅŸÃ¼k puan] from ogrenci
  
-select  Max(puan) as [en yüksek puan] from ogrenci
+select  Max(puan) as [en yÃ¼ksek puan] from ogrenci
 
 
---GROUP BY :Sorgu sonucunda dönen veri kümesi üzerinde gruplama işlemi yapılan yapıdır.
+--GROUP BY :Sorgu sonucunda dÃ¶nen veri kÃ¼mesi Ã¼zerinde gruplama iÅŸlemi yapÄ±lan yapÄ±dÄ±r.
 
 select sinif,
        cinsiyet,
-       count(*) as OgrenciSayısı
+       count(*) as OgrenciSayÄ±sÄ±
 from ogrenci 
 group by cinsiyet,sinif
 
 
 Select sinif,
        cinsiyet,
-       count(*) as OgrenciSayısı
+       count(*) as OgrenciSayÄ±sÄ±
 from ogrenci 
 where cinsiyet = 'K'
 group by cinsiyet,sinif
 
 
 Select sinif,
-       COUNT(*) as ogrenciSayısı
+       COUNT(*) as ogrenciSayÄ±sÄ±
 from ogrenci 
 group by sinif
 
 
---HAVİNG : Having yapısı temelde where ile aynı görevi yapmaktadır.GROUP BY ile kullanılır. 
+--HAVÄ°NG : Having yapÄ±sÄ± temelde where ile aynÄ± gÃ¶revi yapmaktadÄ±r.GROUP BY ile kullanÄ±lÄ±r. 
 
-Select sinif,count(*) as OgrenciSayısı
+Select sinif,count(*) as OgrenciSayÄ±sÄ±
 from ogrenci 
 group by sinif
 having count(*) >= 30
@@ -201,56 +201,9 @@ having count(*) >= 30
 
 --iNSERT,UPDATE,DELETE
 
- insert ogrenci(ad,soyad,puan,sinif) values ('ezgi','yaman','100','11B') --> Database kayıt eklemek
+ insert ogrenci(ad,soyad,puan,sinif) values ('ezgi','yaman','100','11B') --> Database kayÄ±t eklemek
 
- update tur set ad='hikaye' where turno =5 --> Var olan bir database güncelleme yapmak
+ update tur set ad='hikaye' where turno =5 --> Var olan bir database gÃ¼ncelleme yapmak
 
- delete FROM siniflar where id=2 --> Database kayıt silmek
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ delete FROM siniflar where id=2 --> Database kayÄ±t silmek
 
