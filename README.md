@@ -6,10 +6,10 @@ Verilerin güvenle ve bütünlük içerisinde depolanmasını ve aynı anda bird
 
 # SQL Server ile Neler Yapılabilir ?
 
-*Bilgilerin rahatlıkla kategorize edilmesini sağlamaktadır.
-*Yeni veriler çekmek
-*Var olan verileri kaydetmek
-*Verilerin tamamını güncellemek
-*Verilerin sorgulanmasını ve aramasını yapmak
-*Silinen verilerin kayıtlarının yeniden oluşturulmasını sağlamak
-*Yeni tablolar oluşturmak
+* Bilgilerin rahatlıkla kategorize edilmesini sağlamaktadır.
+* Yeni veriler çekmek
+* Var olan verileri kaydetmek
+* Verilerin tamamını güncellemek
+* Verilerin sorgulanmasını ve aramasını yapmak
+* Silinen verilerin kayıtlarının yeniden oluşturulmasını sağlamak
+* Yeni tablolar oluşturmak
