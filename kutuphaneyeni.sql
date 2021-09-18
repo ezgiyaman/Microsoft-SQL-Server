@@ -206,4 +206,29 @@ having count(*) >= 30
  update tur set ad='hikaye' where turno =5 --> Var olan bir database güncelleme yapmak
 
  delete FROM siniflar where id=2 --> Database kayıt silmek
+ 
+ 
+--JOİN
+
+--(INNER) JOIN: İki tablodaki eşleşen kayıtlar için kullanılır.
+--LEFT (OUTER) JOIN: İki tablodaki eşleşen kayıtlar ve eşleşmeyen sol kayıtlar için kullanılır.
+--RIGHT (OUTER) JOIN: İki tablodaki eşleşen kayıtlar ve eşleşmeyen sağ kayıtlar için kullanılır.
+--FULL (OUTER) JOIN: İki tablodaki eşleşen kayıtlar ve eşleşmeyen sol ve sağ kayıtlar için kullanılır. LEFT ve RIGHT JOIN birleşimidir.
+
+select ogrenci.ogrno,ograd,ogrsoyad,sinif,kitapadi
+from ogrenci
+join islem on ogrenci.ogrno=islem.ogrno
+join kitap on islem.kitapno=kitap.kitapno
+where sinif='10B' or sinif='10C'
+order by ogrenci.ograd
+
+select ograd,ogrsoyad,islem.atarih from ogrenci
+left join islem on islem.ogrno=ogrenci.ogrno
+where islem.atarih is null
+
+select ograd,ogrsoyad yazarad,yazarsoyad,kitapadi,turadi from islem
+join kitap on islem.kitapno=kitap.turno
+right join ogrenci on ogrenci.ogrno=islem.ogrno
+left join tur on kitap.turno=tur.turno
+left join yazar on yazar.yazarno=kitap.yazarno
 
