@@ -1,9 +1,9 @@
 
---JOİN
---(INNER) JOIN: İki tablodaki eşleşen kayıtlar için kullanılır.
---LEFT (OUTER) JOIN: İki tablodaki eşleşen kayıtlar ve eşleşmeyen sol kayıtlar için kullanılır.
---RIGHT (OUTER) JOIN: İki tablodaki eşleşen kayıtlar ve eşleşmeyen sağ kayıtlar için kullanılır.
---FULL (OUTER) JOIN: İki tablodaki eşleşen kayıtlar ve eşleşmeyen sol ve sağ kayıtlar için kullanılır. LEFT ve RIGHT JOIN birleşimidir.
+--JOÃN
+--(INNER) JOIN: Ãki tablodaki eÃ¾leÃ¾en kayÃ½tlar iÃ§in kullanÃ½lÃ½r.
+--LEFT (OUTER) JOIN: Ãki tablodaki eÃ¾leÃ¾en kayÃ½tlar ve eÃ¾leÃ¾meyen sol kayÃ½tlar iÃ§in kullanÃ½lÃ½r.
+--RIGHT (OUTER) JOIN: Ãki tablodaki eÃ¾leÃ¾en kayÃ½tlar ve eÃ¾leÃ¾meyen saÃ° kayÃ½tlar iÃ§in kullanÃ½lÃ½r.
+--FULL (OUTER) JOIN: Ãki tablodaki eÃ¾leÃ¾en kayÃ½tlar ve eÃ¾leÃ¾meyen sol ve saÃ° kayÃ½tlar iÃ§in kullanÃ½lÃ½r. LEFT ve RIGHT JOIN birleÃ¾imidir.
 
 
 use BikeStores
@@ -30,18 +30,8 @@ from production.products p
 left join sales.order_items o on o.product_id = p.product_id
 order by order_id;
 
-select required_date,shipped_date,order_id from sales.orders o join sales.stores s on s. store_id  = o. store_id 
-                             join production.stocks st on st. store_id = s.store_id
-							 join production.products p on p. product_id = st.product_id 
-
-
-
-
-
-
-
-
-
-
-
-
+select required_date,shipped_date,
+       order_id 
+from sales.orders o join sales.stores s on s. store_id  = o. store_id 
+                    join production.stocks st on st. store_id = s.store_id
+                    join production.products p on p. product_id = st.product_id 
