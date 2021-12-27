@@ -1,5 +1,3 @@
-# DATABASE NEDİR?
-Verilerin belli bir alanda depolanması anlamına gelmektedir.Bu düzen sayesinde milyonlarca insanın bilgiisine çok kısa bir sürede ulaşılabilmektedir.
 
 # SQL NEDİR?
 Verilerin güvenle ve bütünlük içerisinde depolanmasını ve aynı anda birden fazla kullanıcı tarafından erişilmesini bir ilişkisel veri tabanı yönetim sistemidir.
