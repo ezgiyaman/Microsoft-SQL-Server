@@ -12,6 +12,9 @@ Microsoft SQL Server, verilerin güvenle ve bütünlük içerisinde depolanması
 * Veri raporlama
 * İlke tabanlı veri erişimi
 
+Bu repodaki örneklerim : "BikeStores ve Kütüphane" veri tabanları kullanarak uygulanmıştır.
+* 
+
 
 
 
