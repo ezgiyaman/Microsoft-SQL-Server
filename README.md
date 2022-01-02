@@ -8,12 +8,14 @@ Microsoft SQL Server, verilerin güvenle ve bütünlük içerisinde depolanması
 * Veri işleme ve depolama
 * Veri indeksleme ve sorgulama
 * Veri tabanı yönetimi
-* Veri akışı optimizasyonu
 * Veri raporlama
-* İlke tabanlı veri erişimi
+* Veri erişimi
 
-Bu repodaki örneklerim : "BikeStores ve Kütüphane" veri tabanları kullanarak uygulanmıştır.
-* 
+
+Bu repodaki örneklerim : "BikeStores ve Kütüphane" veri tabanları kullanarak yapılmıştır.
+
+* https://www.sqlservertutorial.net/sql-server-sample-database/
+* https://www.yazilimbilisim.net/veritabani/sql/sql-kutuphane-veritabani-iliskili/
 
 
 
