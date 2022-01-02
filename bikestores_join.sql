@@ -1,8 +1,8 @@
 
---JOÝN
---(INNER) JOIN: Ýki tablodaki eþleþen kayýtlar için kullanýlýr.
---LEFT (OUTER) JOIN: Ýki tablodaki eþleþen kayýtlar ve eþleþmeyen sol kayýtlar için kullanýlýr.
---RIGHT (OUTER) JOIN: Ýki tablodaki eþleþen kayýtlar ve eþleþmeyen sað kayýtlar için kullanýlýr.
+--JOIN
+--(INNER) JOIN: Iki tablodaki eþleþen kayýtlar için kullanýlýr.
+--LEFT (OUTER) JOIN: Iki tablodaki eþleþen kayýtlar ve eþleþmeyen sol kayýtlar için kullanýlýr.
+--RIGHT (OUTER) JOIN: Iki tablodaki eþleþen kayıtlar ve eþleþmeyen sað kayýtlar için kullanýlýr.
 --FULL (OUTER) JOIN: Ýki tablodaki eþleþen kayýtlar ve eþleþmeyen sol ve sað kayýtlar için kullanýlýr. LEFT ve RIGHT JOIN birleþimidir.
 
 
