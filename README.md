@@ -12,7 +12,7 @@ Microsoft SQL Server, verilerin güvenle ve bütünlük içerisinde depolanması
 * Veri erişimi
 
 
-Bu repodaki örneklerimde : "BikeStores ve Kütüphane" veri tabanları kullanılmıştır.
+Bu repodaki örneklerim de : "BikeStores ve Kütüphane" veri tabanları kullanılmıştır.
 
 * https://www.sqlservertutorial.net/sql-server-sample-database/
 * https://www.yazilimbilisim.net/veritabani/sql/sql-kutuphane-veritabani-iliskili/
