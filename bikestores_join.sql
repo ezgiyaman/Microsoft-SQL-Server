@@ -1,9 +1,9 @@
 
 --JOIN
---(INNER) JOIN: Iki tablodaki eklenen kayıtlar için kullanýlýr.
---LEFT (OUTER) JOIN: Iki tablodaki eþleþen kayýtlar ve eþleþmeyen sol kayýtlar için kullanýlýr.
---RIGHT (OUTER) JOIN: Iki tablodaki eþleþen kayıtlar ve eþleþmeyen sað kayýtlar için kullanýlýr.
---FULL (OUTER) JOIN: Ýki tablodaki eþleþen kayýtlar ve eþleþmeyen sol ve sað kayýtlar için kullanýlýr. LEFT ve RIGHT JOIN birleþimidir.
+--(INNER) JOIN: İki tablodaki eklenen kayıtlar için kullanılır.
+--LEFT (OUTER) JOIN: İki tablodaki eþleþen kayýtlar ve eklenmeyen sol kayıtlar için kullanılır.
+--RIGHT (OUTER) JOIN: İki tablodaki eklenen kayıtlar ve eklenemeyen sağ kayıtlar için kullanılır.
+--FULL (OUTER) JOIN: İki tablodaki eklenen kayıtlar ve eklenmeyen sol ve sağ kayıtlar için kullanılır. LEFT ve RIGHT JOIN birleşimidir.
 
 
 use BikeStores
