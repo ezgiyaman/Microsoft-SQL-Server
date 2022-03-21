@@ -36,8 +36,8 @@ Veri tabanında bulunan verileri sorgulamaya yaramaktadır.
 
 DATA MANİPÜLASYON KOMUTLARI |  TANIM | VERİ TABANINDA KULLANIMI
 ---------------------|------------ | -------------------- |
- Select | Veri tabanındaki tablolardan kayıtları çeker. | INSERT INTO TabloAdı (Kolon1,Kolon2,Kolon3) values ( Değer1, Değer2 , Değer3)
- Insert | Tabloya yeni kayıt ekler.           
+ Select | Veri tabanındaki tablolardan kayıtları çeker.Otomoatik artan değerleri Insert Into işlemi yapıp ekleyemeyiz,o değer kendiliğinden eklendiği için(Id gibi..) | INSERT INTO TabloAdı (Kolon1,Kolon2,Kolon3) values ( Değer1, Değer2 , Değer3)
+ Insert | Tabloya yeni kayıt ekler. |      
  Delete | Bir tablodan kayıt siler.Otomatik artan bir alan varsa Id gibi veriler silinsede yenisi eklenmeye başladığı zaman kaldığı sayıdan,değerden devam etmektedir.
  Update |Bir tabloda kaydın bir ya da daha fazla alanını günceller,değiştirir.
  Truncate | Tablonun içini tamamen boşaltır.
