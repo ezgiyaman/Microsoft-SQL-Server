@@ -35,7 +35,7 @@ Bir veri tabanının, veri tekrarını en aza indirgemek ve her tabloda yalnızc
 Veri tabanında bulunan verileri sorgulamaya yaramaktadır.
 
 Data Manipülasyon Komutları | 
----------------------|
+---------------------|-------------------
 Select | Her yerden erişilebilir.
  Private | Sadece tanımlandığı sınıf içerisinden erişilebilir.            
  Internal| Sadece bulunduğu projede erişilebilir.
