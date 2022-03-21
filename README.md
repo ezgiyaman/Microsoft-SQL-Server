@@ -40,7 +40,7 @@ DATA MANİPÜLASYON KOMUTLARI |  TANIM | VERİ TABANINDA KULLANIMI
  Insert | Tabloya yeni kayıt ekler. | Otomatik artan değerleri Insert Into işlemi yapıp ekleyemeyiz,o değer kendiliğinden eklendiği için(Id gibi..) | INSERT INTO TabloAdı (Column1,Column2,Column3) values ( Değer1, Değer2 , Değer3)     
  Delete | Bir tablodan kayıt siler.Otomatik artan bir alan varsa Id gibi veriler silinsede yenisi eklenmeye başladığı zaman kaldığı sayıdan,değerden devam etmektedir.| Delete From TabloAdı
  Update |Bir tabloda kaydın bir ya da daha fazla alanını günceller,değiştirir. | Update (TabloAdı) Set Column1 = Value1 , Column2 = Value2
- Truncate | Tablonun içini tamamen boşaltır. | TRancate Table TabloAdı
+ Truncate | Tablonun içini tamamen boşaltır. | #Trancate #Table TabloAdı
  
 
 
