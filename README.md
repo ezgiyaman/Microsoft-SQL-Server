@@ -30,6 +30,10 @@ SQL ,veri yönetimi amacıyla kullanılan bir dildir. İlişkisel veritabanları
 Normalizasyon, veritabanlarındaki tabloların içeriğini organize etme tekniğidir. Başarılı veritabanı tasarımının bir parçasıdır. Normalizasyon olmadan, veritabanı sistemleri; yanlış, yavaş ve verimsiz olabilir ve beklediğiniz verileri üretmeyebilir.
 Bir veri tabanının, veri tekrarını en aza indirgemek ve her tabloda yalnızca ilgili verilerin depolandığından emin olmak için normalleştirilmesi önemlidir.
 
+# Temel SQL Komutları
+
+Veritabanında bulunan verileri sorgulamaya yaramaktadır.
+
 
 
 
