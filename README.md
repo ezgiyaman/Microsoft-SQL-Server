@@ -33,7 +33,7 @@ Bir veri tabanının, veri tekrarını en aza indirgemek ve her tabloda yalnızc
 # Temel SQL Komutları
 Veritabanında bulunan verileri sorgulamaya yaramaktadır.
 
-* Data Manipülasyon Komutları     * Veritabanı Manipülasyon Komutları
+
 
 
 
