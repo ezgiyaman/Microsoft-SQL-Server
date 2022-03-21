@@ -34,9 +34,9 @@ Bir veri tabanının, veri tekrarını en aza indirgemek ve her tabloda yalnızc
 # Temel SQL Komutları 
 Veri tabanında bulunan verileri sorgulamaya yaramaktadır.
 
-DATA MANİPÜLASYON KOMUTLARI |  TANIM
----------------------|------------
- Select | Veri tabanındaki tablolardan kayıtları çeker.
+DATA MANİPÜLASYON KOMUTLARI |  TANIM | VERİ TABANINDA KULLANIMI
+---------------------|------------ | -------------------- |
+ Select | Veri tabanındaki tablolardan kayıtları çeker. | INSERT INTO TabloAdı (Kolon1,Kolon2,Kolon3) values ( Değer1, Değer2 , Değer3)
  Insert | Tabloya yeni kayıt ekler.           
  Delete | Bir tablodan kayıt siler.Otomatik artan bir alan varsa Id gibi veriler silinsede yenisi eklenmeye başladığı zaman kaldığı sayıdan,değerden devam etmektedir.
  Update |Bir tabloda kaydın bir ya da daha fazla alanını günceller,değiştirir.
