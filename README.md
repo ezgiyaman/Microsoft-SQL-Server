@@ -21,7 +21,7 @@ Yapısal Sorgulama Dili anlamına gelmektedir.Verilerin güvenle ve bütünlük 
  # SQL İLE NELER YAPILABİLİR ?
 SQL ,veri yönetimi amacıyla kullanılan bir dildir. İlişkisel veritabanları başta olmak üzere pek çok farklı türdeki veritabanında bulunan veriler SQL dili kullanılarak yönetilir. SQL dilini kullanılarak yazılan komutlar aracılığıyla veritabanına yeni veriler eklenebilir, var olan veriler değiştirilebilir, kayıtlı veriler silinebilir ve var olan verilerden özel listeler oluşturulabilir.
 
-# Veri Çekme => Select      
+* # Veri Çekme => Select      
 # Veri Ekleme => Insert
 # Veri Silmek => Delete
 # Veri Değiştirme => Update
