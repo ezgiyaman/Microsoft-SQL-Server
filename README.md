@@ -31,7 +31,16 @@ Normalizasyon, veritabanlarındaki tabloların içeriğini organize etme tekniğ
 Bir veri tabanının, veri tekrarını en aza indirgemek ve her tabloda yalnızca ilgili verilerin depolandığından emin olmak için normalleştirilmesi önemlidir.
 
 
+# Temel SQL Komutları 
+Veri tabanında bulunan verileri sorgulamaya yaramaktadır.
 
+Data Manipülasyon Komutları | 
+---------------------|
+Select | Her yerden erişilebilir.
+ Private | Sadece tanımlandığı sınıf içerisinden erişilebilir.            
+ Internal| Sadece bulunduğu projede erişilebilir.
+ Protected |Sadece tanımlandığı sınıfta ya da o sınıfı miras alan sınıflardan erişilebilir.
+ Protected Internal|Sadece tanımlandığı sınıfta ya da o sınıfı miras alan sınıflardan erişilebilir.Ayrıca tanımlamanın aynı projede olma şartı yoktur.Protected'dan farkı budur.
 
 
 
