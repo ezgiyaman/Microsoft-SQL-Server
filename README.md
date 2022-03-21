@@ -18,7 +18,7 @@ Veritabanı sunucusu network üzerinden gelen komutları dinler ve bize istediğ
 # SQL (Structured Query Language)
 Yapısal Sorgulama Dili anlamına gelmektedir.Verilerin güvenle ve bütünlük içerisinde depolanmasını ve aynı anda birden fazla kullanıcı tarafından erişilmesini sağlayan ilişkisel veri tabanı yönetim sistemidir.
 
- # SQL İLE NELER YAPILABİLİR ?
+ # SQL İLE Neler Yapılabilir?
 SQL ,veri yönetimi amacıyla kullanılan bir dildir. İlişkisel veritabanları başta olmak üzere pek çok farklı türdeki veritabanında bulunan veriler SQL dili kullanılarak yönetilir. SQL dilini kullanılarak yazılan komutlar aracılığıyla veritabanına yeni veriler eklenebilir, var olan veriler değiştirilebilir, kayıtlı veriler silinebilir ve var olan verilerden özel listeler oluşturulabilir.
 
 * ## Veri Çekme => Select      
@@ -31,7 +31,6 @@ Normalizasyon, veritabanlarındaki tabloların içeriğini organize etme tekniğ
 Bir veri tabanının, veri tekrarını en aza indirgemek ve her tabloda yalnızca ilgili verilerin depolandığından emin olmak için normalleştirilmesi önemlidir.
 
 # Temel SQL Komutları
-
 Veritabanında bulunan verileri sorgulamaya yaramaktadır.
 
 
