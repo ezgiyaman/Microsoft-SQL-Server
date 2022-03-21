@@ -34,13 +34,14 @@ Bir veri tabanının, veri tekrarını en aza indirgemek ve her tabloda yalnızc
 # Temel SQL Komutları 
 Veri tabanında bulunan verileri sorgulamaya yaramaktadır.
 
-Data Manipülasyon Komutları | 
----------------------|-------------------
-Select | Her yerden erişilebilir.
- Private | Sadece tanımlandığı sınıf içerisinden erişilebilir.            
- Internal| Sadece bulunduğu projede erişilebilir.
- Protected |Sadece tanımlandığı sınıfta ya da o sınıfı miras alan sınıflardan erişilebilir.
- Protected Internal|Sadece tanımlandığı sınıfta ya da o sınıfı miras alan sınıflardan erişilebilir.Ayrıca tanımlamanın aynı projede olma şartı yoktur.Protected'dan farkı budur.
+DATA MANİPÜLASYON KOMUTLARI |  TANIM
+---------------------|------------
+ Select | Veri tabanındaki tablolardan kayıtları çeker.
+ Insert | Tabloya yeni kayıt ekler.           
+ Delete | Bir tablodan kayıt siler.Otomatik artan bir alan varsa Id gibi veriler silinsede yenisi eklenmeye başladığı zaman kaldığı sayıdan,değerden devam etmektedir.
+ Update |Bir tabloda kaydın bir ya da daha fazla alanını günceller,değiştirir.
+ Truncate | Tablonun içini tamamen boşaltır.
+ 
 
 
 
